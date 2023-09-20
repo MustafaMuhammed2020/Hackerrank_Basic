@@ -1,0 +1,65 @@
+/***********************************************************/
+/** Author : Mustafa Mohammed                             **/
+/** Date   : 20 Sep 2023                                  **/
+/** Hint   : longest subarray problem (Hackerrank basic)  **/
+/***********************************************************/
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+/*****************************************************************************
+/* function takes array of integers and its size and returns the length
+/*  of longest subarray where the differnce between its elements is 1
+/* function parameters :
+/* [in]  array of integers
+/* [in]  array count (size)
+/* [out] the length of longest subarray
+/* Complexity O(n)
+/*****************************************************************************/
+int LongestSubarray(int * Numbers , int NumbersCount )
+{
+    int SubarrayLength = 1 , Iterator1 = 0 , Difference = 0 , MaxLength = 1 , NextElement = 0 ;
+
+    for (Iterator1 = 0 ; Iterator1 < NumbersCount ; Iterator1++) /** loop over all array elements **/
+    {
+        NextElement = Numbers[Iterator1+1] +1 ; /** store the element we need to compare the current element with it **/
+        
+        /** get the difference between each two elements **/
+        Difference = ( Numbers[Iterator1] >  NextElement ) ? (Numbers[Iterator1] - NextElement) : NextElement - Numbers[Iterator1] ;
+        
+        if( Difference == 1 || Difference == 0 ) /** increase the subarray length if difference is 1 or 0 **/
+        {
+                MaxLength++ ;
+
+                if( MaxLength > SubarrayLength ) /** if the max length is greater than the previous stored subarray length capture it **/
+                {
+                    SubarrayLength = MaxLength ;
+                }
+        }
+        
+        else /** reinitialize the maxlength to 0 when the difference is more than 1 **/
+        {
+            MaxLength = 1 ;
+        }
+        
+    }
+
+    return SubarrayLength ; /** return the maxmim length **/
+}
+
+
+/** testing code **/
+int main(void)
+{
+    int Arr[] = {2,2,1}; /** Array for testing the code **/
+
+    int ArrSize = sizeof(Arr)/sizeof(Arr[0]); /** calculate the array length **/
+
+    int Result = LongestSubarray(Arr , ArrSize) ; /** call the function **/
+
+    printf("Length of longest subarray :%d\n",Result) ; /** print the result **/
+
+
+    return 0;
+}
