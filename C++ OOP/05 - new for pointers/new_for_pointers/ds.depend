@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1631104120 source:c:\users\click\desktop\c++ programs\04 - destructor\ds\main.cpp
+	<iostream>
+	"rectangle.h"
+
+1631104095 source:c:\users\click\desktop\c++ programs\04 - destructor\ds\src\rectangle.cpp
+	"rectangle.h"
+
+1631104019 c:\users\click\desktop\c++ programs\04 - destructor\ds\include\rectangle.h
+

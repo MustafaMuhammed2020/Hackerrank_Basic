@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1631289407 source:c:\users\click\desktop\c++ programs\08 - library class\library_class\main.cpp
+	"Books.h"
+
+1631289125 source:c:\users\click\desktop\c++ programs\08 - library class\library_class\src\books.cpp
+	"Books.h"
+
+1631286848 c:\users\click\desktop\c++ programs\08 - library class\library_class\include\books.h
+	<iostream>
+	<cstring>
+

@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1631031824 source:c:\users\click\desktop\c++ programs\constructor\main.cpp
+	<iostream>
+	"Student.h"
+
+1631031873 c:\users\click\desktop\c++ programs\constructor\include\student.h
+	<cstring>
+

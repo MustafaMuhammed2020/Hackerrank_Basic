@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1631454954 source:c:\users\click\desktop\c++ programs\010 - operator overloading\02 - unary operators\01 - pos prefix\class_prefix\src\point.cpp
+	"Point.h"
+
+1631454406 c:\users\click\desktop\c++ programs\010 - operator overloading\02 - unary operators\01 - pos prefix\class_prefix\include\point.h
+	<iostream>
+
+1631454611 source:c:\users\click\desktop\c++ programs\010 - operator overloading\02 - unary operators\01 - pos prefix\class_prefix\main.cpp
+	"Point.h"
+

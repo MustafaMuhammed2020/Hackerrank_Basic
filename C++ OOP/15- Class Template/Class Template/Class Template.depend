@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1632231719 source:c:\users\click\desktop\c++ programs\015- class template\class template\main.cpp
+	"Object.h"
+
+1632231523 source:c:\users\click\desktop\c++ programs\015- class template\class template\src\object.cpp
+	"Object.h"
+
+1632231696 c:\users\click\desktop\c++ programs\015- class template\class template\include\object.h
+	<iostream>
+

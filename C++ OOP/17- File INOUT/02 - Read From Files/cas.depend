@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1632323743 source:c:\users\click\desktop\new folder\cas\main.cpp
+	<iostream>
+	<fstream>
+	<cstring>
+

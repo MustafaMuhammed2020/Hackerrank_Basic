@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1631544985 source:c:\users\click\desktop\c++ programs\010 - operator overloading\05 - input output operators\input output\src\numbers.cpp
+	"Numbers.h"
+
+1631545450 c:\users\click\desktop\c++ programs\010 - operator overloading\05 - input output operators\input output\include\numbers.h
+	<iostream>
+
+1631545378 source:c:\users\click\desktop\c++ programs\010 - operator overloading\05 - input output operators\input output\main.cpp
+	"Numbers.h"
+

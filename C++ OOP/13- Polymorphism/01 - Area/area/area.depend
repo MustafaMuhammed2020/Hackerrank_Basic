@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1632143714 source:c:\users\click\desktop\c++ programs\013- polymorphism\01 - area\area\src\shape.cpp
+	"Shape.h"
+
+1632143665 c:\users\click\desktop\c++ programs\013- polymorphism\01 - area\area\include\shape.h
+	<cmath>
+
+1632143747 source:c:\users\click\desktop\c++ programs\013- polymorphism\01 - area\area\main.cpp
+	<iostream>
+	"Shape.h"
+

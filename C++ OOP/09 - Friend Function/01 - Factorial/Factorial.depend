@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1631366819 source:c:\users\click\desktop\c++ programs\09 - friend function\factorial\src\rectangle.cpp
+	"Rectangle.h"
+
+1631367014 c:\users\click\desktop\c++ programs\09 - friend function\factorial\include\rectangle.h
+
+1631367004 source:c:\users\click\desktop\c++ programs\09 - friend function\factorial\main.cpp
+	<iostream>
+	"Rectangle.h"
+

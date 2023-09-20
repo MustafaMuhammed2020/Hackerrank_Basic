@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1631368951 source:c:\users\click\desktop\c++ programs\09 - friend function\02 - area sum\area sum\main.cpp
+	<iostream>
+	"Rectangle.h"
+
+1631368746 source:c:\users\click\desktop\c++ programs\09 - friend function\02 - area sum\area sum\src\rectangle.cpp
+	"Rectangle.h"
+
+1631368990 c:\users\click\desktop\c++ programs\09 - friend function\02 - area sum\area sum\include\rectangle.h
+

@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1631220324 source:c:\users\click\desktop\c++ programs\07 - time class\time_class\src\time.cpp
+	"Time.h"
+
+1631218730 c:\users\click\desktop\c++ programs\07 - time class\time_class\include\time.h
+	<iostream>
+
+1631220277 source:c:\users\click\desktop\c++ programs\07 - time class\time_class\main.cpp
+	"Time.h"
+

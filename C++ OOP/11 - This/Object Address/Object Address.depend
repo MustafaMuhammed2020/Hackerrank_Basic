@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1631448101 source:c:\users\click\desktop\c++ programs\011 - this\object address\src\student.cpp
+	"Student.h"
+
+1631447727 c:\users\click\desktop\c++ programs\011 - this\object address\include\student.h
+	<iostream>
+	<cstring>
+
+1631448027 source:c:\users\click\desktop\c++ programs\011 - this\object address\main.cpp
+	"Student.h"
+

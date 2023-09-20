@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1631375564 source:c:\users\click\desktop\c++ programs\010 - operator overloading\operators\main.cpp
+	"Rectangle.h"
+
+1631375719 source:c:\users\click\desktop\c++ programs\010 - operator overloading\operators\src\rectangle.cpp
+	"Rectangle.h"
+
+1631375696 c:\users\click\desktop\c++ programs\010 - operator overloading\operators\include\rectangle.h
+	<iostream>
+

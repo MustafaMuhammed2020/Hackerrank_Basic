@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1631534583 source:c:\users\click\desktop\c++ programs\010 - operator overloading\02 - unary operators\02 - ! class\relational op\main.cpp
+	<iostream>
+	"Point.h"
+
+1631534654 source:c:\users\click\desktop\c++ programs\010 - operator overloading\02 - unary operators\02 - ! class\relational op\src\point.cpp
+	"Point.h"
+
+1631534654 c:\users\click\desktop\c++ programs\010 - operator overloading\02 - unary operators\02 - ! class\relational op\include\point.h
+

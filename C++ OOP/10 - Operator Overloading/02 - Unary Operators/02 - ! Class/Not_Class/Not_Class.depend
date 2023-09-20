@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1631464348 source:c:\users\click\desktop\c++ programs\010 - operator overloading\02 - unary operators\02 - ! class\not_class\main.cpp
+	<iostream>
+	"Numbers.h"
+
+1631464429 source:c:\users\click\desktop\c++ programs\010 - operator overloading\02 - unary operators\02 - ! class\not_class\src\numbers.cpp
+	"Numbers.h"
+
+1631464147 c:\users\click\desktop\c++ programs\010 - operator overloading\02 - unary operators\02 - ! class\not_class\include\numbers.h
+

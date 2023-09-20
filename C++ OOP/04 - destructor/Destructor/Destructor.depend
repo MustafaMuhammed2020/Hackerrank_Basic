@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1631035290 source:c:\users\click\desktop\c++ programs\04 - destructor\destructor\main.cpp
+	<iostream>
+	"Destructor.h"
+
+1631034180 source:c:\users\click\desktop\c++ programs\04 - destructor\destructor\src\destructor.cpp
+	"Destructor.h"
+
+1631035338 c:\users\click\desktop\c++ programs\04 - destructor\destructor\include\destructor.h
+

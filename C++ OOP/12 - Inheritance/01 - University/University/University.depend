@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1631724932 source:c:\users\click\desktop\c++ programs\012 - inheritance\01 - university\university\main.cpp
+	"University.h"
+
+1631723841 c:\users\click\desktop\c++ programs\012 - inheritance\01 - university\university\include\university.h
+	<iostream>
+	<cstring>
+
+1631724900 source:c:\users\click\desktop\c++ programs\012 - inheritance\01 - university\university\src\university.cpp
+	"University.h"
+

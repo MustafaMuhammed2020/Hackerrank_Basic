@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1631538620 source:c:\users\click\desktop\c++ programs\010 - operator overloading\03 - relational operators\overload\src\numbers.cpp
+	"Numbers.h"
+
+1631538060 c:\users\click\desktop\c++ programs\010 - operator overloading\03 - relational operators\overload\include\numbers.h
+	<iostream>
+
+1631537773 source:c:\users\click\desktop\c++ programs\010 - operator overloading\03 - relational operators\overload\main.cpp
+	"Numbers.h"
+
