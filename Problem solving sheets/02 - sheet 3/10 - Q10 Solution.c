@@ -1,0 +1,152 @@
+/****************************************************************/
+/* Author   : Mustafa Muhammed Abdou                            */
+/* Date     : 4 Feb,2023                                        */
+/* Version  : V01                                               */
+/* Hint     : Merge two arraies into one                        */
+/****************************************************************/
+#include<stdio.h>
+#include<stdlib.h> /* TO USE THE DYNAMIC ALLOCATION malloc() */
+
+/* FUNCTION PROTOTYPE / DECLERATION                              */
+/* FUNCTION TAKES TWO ARRAYIES AND THEIR SIZE AND RETURNS ONE    */
+/* ARRAY MERING THEM                                             */
+int * IntMerge(int * CopyIntArr1 , int * CopyIntArr2 , int CopyIntSize);
+
+int main()
+{
+    /* CREATE TWO ARRAIES FOR TESTING */
+    int IntLocalArrar1[5]={1,2,3,4,5};
+    int IntLocalArray2[5]={10,20,30,40,50};
+    
+    /* ARRAY TOHOLD THE RETURN FROM THE FUNCTION */
+    int * IntLocalMergedArr ;
+    
+    /* CALCULATE THE SIZE OF MERGED ARRAY */
+    int IntLocalMergedArrSize = (sizeof(IntLocalArrar1)/sizeof(IntLocalArrar1[0]) * 2);
+    
+    /* CALL MERGING FUNCTION */
+    IntLocalMergedArr = IntMerge(IntLocalArrar1 , IntLocalArray2 , 5);
+    
+    /* PRINT THE MERGEF ARRAY */
+    for (int i = 0; i < IntLocalMergedArrSize ; i++)
+    {
+        printf("%d\t",IntLocalMergedArr[i]);
+    }
+    
+    return 0 ;
+}
+
+/* FUNCTION IMPLEMENTATION / DEFINITION */
+int * IntMerge(int * CopyIntArr1 , int * CopyIntArr2 , int CopyIntSize)
+{
+    /* DYNAMICALLY CREATE AN ARRAY */
+    int * IntLocalMegedArr = (int *)malloc((2*CopyIntSize)*sizeof(int));
+    int OddCounter = 0 , EvenCounter = 0 ; /* COUNTERS WILL BE USED */
+
+    /******************************************************************/
+    /* THE MAIN TRICK IS THAT ELEMENTS OF ARRAY2 WILL APPEAR IN       */
+    /* EVEN INDEX IN THE NEW ARRAY (0,2,4,6,8,10)                     */
+    /* AND ELEMENTS OF THE FIRST  ARRAY WILL APPEAR IN THE ODD        */
+    /* INDEX IN THE NEW MERGED ARRAY (1,3,5,7,9)                      */
+    /* SO WE NEED TWO COUNTERS EACH INCREASED IN THE INVERSE SIDE     */
+    /* TO ASSIGN THE ELEMENTS PROBERLY                                */
+    /* ALSO THE SIZE OF MERGING ARRAY WILL DOUBLE TO EACH ARRAY SIZE  */
+    /******************************************************************/
+    for(int i = 0; i < (2*CopyIntSize) ; i++)
+    {
+        if((i % 2) == 0) /* EVEN INDEX */
+        {
+            IntLocalMegedArr[i] = CopyIntArr1[i - EvenCounter]; /* EVALUATE THE ELEMENT FROM ARR1*/
+            OddCounter++; /* ODD COUNTER INCREASED IN EVEN INDEX */
+
+        }
+        
+        else if((i % 2) == 1) /* ODD INDEX */
+        {
+            IntLocalMegedArr[i] = CopyIntArr2[i - OddCounter]; /* EVALUATE ELEMENT FROM ARR2*/
+            EvenCounter++;         /* EVEN COUNTER INCREASED IN ODD INDEX */
+        }
+    }
+
+    /* RETURN THE POINTER ( ARRAY )*/
+    return IntLocalMegedArr ;
+
+}
+
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+/** 
+ *  @brief     : function to merge two arraies with different sizes 
+ *  @Arguments : Array1 , size of array1 , array2 , size of array 2 
+ *  @returns   : new array merging the passed arraies 
+**/
+int * MergeArr(int * Arr1 , int Size1 , int * Arr2 , int Size2)
+{
+    int iterator = 0 , MaxCounter = 0 , MinCounter = 0 , MinSize = 0 , * BiggerArr  = NULL , * SmallerArr = NULL ;
+    
+    int * RetArr = (int *)malloc((Size1 + Size2) * sizeof(int)); /** dynamic allocation **/
+    
+    MinSize = ( Size1 > Size2 ) ? Size2 : Size1 ; /** decide which array is greater **/
+ 
+    if( Size1 >= Size2 ) /** point to the greater and smaller array **/
+    {
+        BiggerArr = Arr1 ;
+        SmallerArr = Arr2 ;
+    }
+    else
+    {
+        BiggerArr = Arr2 ;
+        SmallerArr = Arr1 ;
+    }
+    
+    for( iterator = 0 ; iterator < (Size1 + Size2) ; iterator++ ) /** filling the b=new array **/
+    {
+        if( MinCounter >= MinSize ) /** smaller Array has ne elements now **/
+        {
+            RetArr[iterator] = BiggerArr[MaxCounter] ; /** complete with the greater array elements **/
+            MaxCounter++ ;
+        }
+        else /** no array finished yet **/
+        {
+            if( ((iterator % 2) == 0) ) /** even index **/
+            {
+                RetArr[iterator] = BiggerArr[MaxCounter] ; /** hosting array which will be the first in merged array **/
+                MaxCounter++ ;
+            }
+            else if( ((iterator % 2) == 1)) /** odd index **/
+            {
+                RetArr[iterator] = SmallerArr[MinCounter] ; /** guest array which will start from the second element in merged array **/
+                MinCounter++ ;
+            }
+        
+        }
+    }
+    
+    return RetArr ; /** return the merged array **/
+}
+
+/** test driver **/
+int main()
+{
+    int Array[] = {1,2,3} , Array2[] = {10,20,30} ;
+    
+    int * newArr = MergeArr(Array , 3 , Array2 , 3 );
+    
+    for( int y = 0 ; y < 6 ; y++ )
+    {
+        printf("%d\t",newArr[y]);
+    }
+
+    return 0;
+}
+
+
